@@ -1,3 +1,8 @@
+ports:
+- port: 8050
+  onOpen: open-browser
+- port: 8888
+  onOpen: open-browser
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: 'echo "TODO: Replace with command to start project"'
+- init: /workspace/testgitpod/run.sh
+  command: cp -r /workspace/testgitpod/.jupyter /home/gitpod/
